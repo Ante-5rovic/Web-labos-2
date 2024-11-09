@@ -11,8 +11,19 @@
 <body>
     <div class="index-main-wrap">
         <%- include('partials/header') %>
-        WoW
+        <div class="content">
+            <div class="dropdown-wrap">
+                <div class="dropdown closed">
+                    <h2 class="icon">Dropdown <span>∆</span></h2>
+                    <ul class="menu">
+                        <li><a href="#">SQL Injection</a></li>
+                        <li><a href="#">Broken Authentication</a></li>
+                    </ul>
+                </div>
+            </div>           
+        </div>
         <%- include('partials/footer') %>
+        <script src="scripts/index.js"></script>
     </div>
 </body>
 

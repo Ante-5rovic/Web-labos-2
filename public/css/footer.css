@@ -1,0 +1,8 @@
+.footer-backgrount-repeating-img {
+    
+    height: 37vw;
+    background-image: url("../images/footer1.webp"); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center center;
+  }

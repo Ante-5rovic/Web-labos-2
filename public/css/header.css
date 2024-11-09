@@ -1,0 +1,13 @@
+
+h1{
+  min-height: 60px;
+  font-size: 45px;
+  text-align: start;
+  color: #fff;
+  margin-left: 0.67em;
+}
+
+* {
+  color: #fff;
+  text-decoration: none;
+}
