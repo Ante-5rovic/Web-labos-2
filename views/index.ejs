@@ -16,13 +16,18 @@
                 <div class="dropdown closed">
                     <h2 class="icon">Dropdown <span>∆</span></h2>
                     <ul class="menu">
-                        <li><a href="#">SQL Injection</a></li>
-                        <li><a href="#">Broken Authentication</a></li>
+                        <li><a href="#" onclick="changeDisplay('1')">SQL Injection</a></li>
+                        <li><a href="#" onclick="changeDisplay('2')">Broken Authentication</a></li>
                     </ul>
                 </div>
             </div>
             <div class="content-task">
-                <%- include('components/SQLInjection') %>
+                <div class="content-task1">
+                    <%- include('components/SQLInjection') %>
+                </div>
+                <div class="content-task2">
+                    <%- include('components/brokenAuth') %>
+                </div>
             </div>          
         </div>
         <%- include('partials/footer') %>

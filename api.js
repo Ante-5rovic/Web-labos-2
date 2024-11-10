@@ -49,6 +49,6 @@ async function nesiguranGetKorisnik(ime, prezime) {
 }
 
 
-addKorisnik("test", "test");
+//addKorisnik("test", "test");
 
 module.exports = { getKorisnik,nesiguranGetKorisnik };

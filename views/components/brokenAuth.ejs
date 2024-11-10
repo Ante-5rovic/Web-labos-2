@@ -4,8 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>brokenAuthentication</title>
+    <link rel="stylesheet" href="css/brokenAuth.css">
 </head>
 <body>
-    
+    <div class="brokenAuth-main-wrap">
+        <h1 class="brokenAuth-title">Loša autentifikacija (Broken Authentication)</h1>
+        <form action="" id="brokenAuth-form">
+            <button type="button" id="brokenAuth-form-protect-button" onclick="protectionClick2()">Zaštićeno</button>
+
+            <label for="username">Korisničko ime:</label>
+            <input type="text" id="brokenAuth-form-username" name="username" required>
+
+            <label for="password">Lozinka:</label>
+            <input type="password" id="brokenAuth-form-password" name="password" required>
+
+            <button type="button" onclick="submitForm()" id="brokenAuth-form-submit-button">Prijavi se</button>
+        </form>    
+    </div>
+    <p>Upute: <label>bla bla</label></p>
+    <script src="scripts/brokenAuth.js"></script>
 </body>
 </html>
