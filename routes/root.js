@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const {getKorisnik,nesiguranGetKorisnik} = require("../api");
+const {getKorisnik,nesiguranGetKorisnik,addKorisnik} = require("../api");
 
 router.get("^/$|/index(.html)?", async (req, res) => {
   res.render("index", {});
@@ -25,6 +25,24 @@ router.post('/login', async(req, res) => {
   }else{
     message = `Korisničko ime ili lozinka su pogrešni!`;
   }
+  res.json({ message });
+
+});
+
+
+router.post('/register', async(req, res) => {
+  
+  const { ime, prezime, tip } = req.body;
+  let message="SLUCAJ 2";
+
+  if(tip){
+    //Sigurna slucaj, provjerio ostatak parametara
+
+  }else{
+ 
+
+  }
+  
   res.json({ message });
 
 });
