@@ -4,25 +4,38 @@ const username2 = document.getElementById("brokenAuth-form-username");
 const password2 = document.getElementById("brokenAuth-form-password");
 const captchaInput = document.getElementById("captchaInput");
 const captchaSVG = document.getElementById("captchaContainer");
+const colors = document.getElementsByClassName("color-1");
 let captchaText = "";
 
 function protectionClick2() {
   protection2 = !protection2;
   console.log(protection2);
   button2.classList.add("fade-out");
+  colors[0].classList.add("fade-out");
+  colors[1].classList.add("fade-out");
+  colors[2].classList.add("fade-out");
   setTimeout(() => {
     if (protection2) {
       button2.style.color = "#0DDEB8";
       button2.innerHTML = "Zaštićeno";
       captchaInput.style.display = "block";
       captchaSVG.style.display = "block";
+      colors[0].style.color = "#0DDEB8";
+      colors[1].style.color = "#0DDEB8";
+      colors[2].style.color = "#0DDEB8";
     } else {
       button2.style.color = "#fc6666";
       button2.innerHTML = "Nije zaštićeno";
       captchaInput.style.display = "none";
       captchaSVG.style.display = "none";
+      colors[0].style.color = "#fc6666";
+      colors[1].style.color = "#fc6666";
+      colors[2].style.color = "#fc6666";
     }
     button2.classList.remove("fade-out");
+    colors[0].classList.remove("fade-out");
+    colors[1].classList.remove("fade-out");
+    colors[2].classList.remove("fade-out");
   }, 300);
 }
 
