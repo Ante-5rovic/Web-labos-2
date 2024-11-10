@@ -9,8 +9,7 @@ body {
 
 .dropdown-wrap {
     margin-top: 30px;
-
-    height: 400px;
+    min-height: 330px;
     display: flex;
     flex-flow: row;
     justify-content: center;
@@ -80,7 +79,7 @@ h2 {
 .menu {
   grid-area: menu;
   transition: all 0.2s ease-in-out;
-  height: 238px;
+ 
 }
 
 .menu li {
@@ -104,18 +103,31 @@ h2 {
   height: 0;
 }
 
-#output {
-  position: absolute;
-  right: 20px;
-  top: 30px;
-  background: rgb(242, 242, 242);
-  padding: 1rem;
-  width: 350px;
-  border: solid 1px rgb(222, 222, 222);
+label{
+    font-size: 23px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: normal;
 }
-
-@media screen and (max-width: 800px) {
-  #output {
-    display: none;
-  }
+button{
+    font-family: sans-serif;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+input{
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    color: white;
+    outline: none; 
+    font-size: 20px;
+}
+.content-task{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
 }

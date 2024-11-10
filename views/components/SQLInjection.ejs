@@ -1,11 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SQLInjection</title><link rel="stylesheet" href="css/SQLInjection.css">
 </head>
+
 <body>
-    
+    <div class="SQLInjection-main-wrap">
+        <h1 class="SQLInjection-title">SQL umetanje (SQL Injection)</h1>
+        <form action="" id="SQLInjection-form">
+            <button type="button" id="form-protect-button" onclick="protectionClick()">Zaštićeno</button>
+
+            <label for="username">Korisničko ime:</label>
+            <input type="text" id="SQLInjection-form-username" name="username" required>
+
+            <label for="password">Lozinka:</label>
+            <input type="password" id="SQLInjection-form-password" name="password" required>
+
+            <button type="button" onclick="submitForm()" id="form-submit-button">Prijavi se</button>
+        </form>    
+    </div>
+    <script src="scripts/SQLInjection.js"></script>
+    <p>Upute: <label>bla bla</label></p> 
 </body>
+
 </html>
