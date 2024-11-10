@@ -1,27 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>brokenAuthentication</title>
     <link rel="stylesheet" href="css/brokenAuth.css">
 </head>
+
 <body>
     <div class="brokenAuth-main-wrap">
         <h1 class="brokenAuth-title">Loša autentifikacija (Broken Authentication)</h1>
         <form action="" id="brokenAuth-form">
             <button type="button" id="brokenAuth-form-protect-button" onclick="protectionClick2()">Zaštićeno</button>
 
-            <label for="username">Korisničko ime:</label>
+            <label for="username" class="remove-margin-left">Korisničko ime:</label>
             <input type="text" id="brokenAuth-form-username" name="username" required>
 
-            <label for="password">Lozinka:</label>
+            <label for="password" class="remove-margin-left">Lozinka:</label>
             <input type="password" id="brokenAuth-form-password" name="password" required>
 
+            <div id="captchaContainer"></div>
+            <input type="text" id="captchaInput" placeholder="Unesite CAPTCHA kod" />
+
             <button type="button" onclick="submitForm2()" id="brokenAuth-form-submit-button">Registriraj se</button>
-        </form>    
+        </form>
+
     </div>
-    <p>Upute: <label>bla bla</label></p>
+    <p>Upute: <label>Implementirane su sljedeće sigurnosne mjere za sprječavanje loše autentifikacije na primjeru registracije u sustav. 📜</label><label>
+        Restrikcije na sadržaj lozinke( mora imati veliko slovo i znamenku, biti barem 9 znamenaka karaktera dugačka i imati jedan specijalni znak). 
+        Dodatno je implementiran CAPTCHA za sprječavanje bot napada. 
+        Uz prethodno spomenute restrikcije na lozinku također je primijenjeno pravilo zabrane korištenja lozinki korištenja
+        nisu sigurne, odnosno nalaze se u sustavu pwnedpasswords.com.</label><label> Korištenje je očekivano, pomoć pri odabiru lozinke koja zadovoljava restrikcije i 
+        nalazi se u sustavu pwnedpasswords : Password1! 🔓.
+    </label></p>
     <script src="scripts/brokenAuth.js"></script>
 </body>
+
 </html>

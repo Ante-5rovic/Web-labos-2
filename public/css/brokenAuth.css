@@ -32,10 +32,23 @@
     transition: background-color 0.4s, opacity 0.3s;
     color: #0DDEB8;
 }
+#captchaContainer{
+    background-color: white;
+    margin: 10px;
+}
 .fade-out {
     opacity: 0;
+}
+label{
+    margin-left: 20px;
 }
 p{
     font-size: 30px;
     font-weight: bold;
+    width: 80%;
+    display: flex;
+    flex-flow: column;
+    justify-content: start;
+    align-items: start;
+    
 }

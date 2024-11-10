@@ -14,6 +14,7 @@ function changeDisplay(id) {
         prikaz1.classList.remove("fade-out");
         prikaz1.classList.add("add-display");
     } else if(visualised=="2"){
+        loadCaptcha()
         prikaz2.classList.remove("fade-out");
         prikaz2.classList.add("add-display");
     }else{
